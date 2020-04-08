@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog App</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="static/navbar.css">
 </head>
-<body style="background-color: cadetblue;">
-    <nav style="text-align: center; font-size: 40px; background-color: burlywood;"><h1>BlogApp</h1></nav>
-    <hr style="background-color: black; height: 4px;">
+<body>
+	<ul>
+        <li><a class="active" href="#">Home</a></li>
 
-    {% block content %}{% endblock %}
+        <li><button class="nav_right" type="button">logout</button></li>
+        <li><a  href="#">Login</a> </li>
+        <li><a  href="#">Register</a></li>
+        <li><a  href="#">Profile</a></li>
+        
+    </ul>
+    {% block content %} {% endblock %} 
+
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quo? Quaerat quis rerum enim adipisci accusantium tempore itaque. Praesentium suscipit quo exercitationem. Corrupti pariatur unde earum beatae delectus, molestiae commodi?
+    </div>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptate, adipisci harum fuga rem quod nihil ut nobis eligendi, soluta minima in, quia ipsam corporis illo. Voluptatum obcaecati laudantium minima.</div>
 
 </body>
 </html>
